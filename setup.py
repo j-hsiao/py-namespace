@@ -9,7 +9,7 @@ from namespace import make_ns
 
 make_ns('jhsiao')
 setup(
-    name='jhsiao.namespace',
+    name='jhsiao-namespace',
     version='0.0.1',
     author='Jason Hsiao',
     author_email='oaishnosaj@gmail.com',
