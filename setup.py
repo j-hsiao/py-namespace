@@ -14,5 +14,6 @@ setup(
     author='Jason Hsiao',
     author_email='oaishnosaj@gmail.com',
     description='manage add pkgutil namespace __init__.py',
+    packages=['jhsiao'],
     py_modules=['jhsiao.namespace']
 )
