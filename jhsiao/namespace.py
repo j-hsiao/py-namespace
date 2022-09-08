@@ -36,14 +36,3 @@ def make_ns(*dirs, **kwargs):
                 f.write(
                     b"__path__ = __import__('pkgutil')"
                     b'.extend_path(__path__, __name__)\n')
-
-
-def fdir(fname=None, *modifiers):
-    """Convenience function to return directory of filename.
-
-    If fname is None, use inspect to find the filename of caller.
-    """
-    if fname is None:
-        import inspect
-        fname = inspect.currentframe().f_back.f_code.co_filename
-    return os.path.abspath(os.path.join(os.path.dirname(fname), *modifiers))
